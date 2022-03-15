@@ -290,7 +290,67 @@ aside li a {
     background-color: #16D696;
     color: #fff;
     border-radius: 0;
-    height: 350px;
+}
+
+
+/* Form Styling */
+
+.form-input-wrapper {
+    margin-top: 35px !important;
+    position: relative;
+}
+
+.basic-input-wrapper {
+    margin-top: 0 !important;
+}
+
+.basic-input-wrapper label {
+    line-height: 50px;
+    padding-left: 15px;
+    color: #296CFB;
+    transition: top .3s ease;
+}
+
+.form-input-wrapper label {
+    top: 0;
+    position: absolute;
+    line-height: 50px;
+    padding-left: 15px;
+    color: #296CFB;
+    transition: top .3s ease;
+}
+
+input.form-control {
+    height: 50px;
+    padding-left: 15px;
+    border: 2px solid #296CFB;
+    border-radius: 0;
+}
+
+textarea.form-control {
+    min-height: 100px;
+    padding-left: 15px;
+    border: 2px solid #296CFB;
+    border-radius: 0;
+}
+
+input.form-control:focus~label,
+textarea.form-control:focus~label {
+    top: -30px;
+    line-height: 25px;
+}
+
+label.stay-top {
+    top: -30px;
+    line-height: 25px;
+}
+
+select.form-select {
+    height: 50px;
+    padding-left: 15px;
+    border: 2px solid #296CFB;
+    color: #296CFB;
+    border-radius: 0;
 }
 
 @media screen and (max-width: 1024px) {
