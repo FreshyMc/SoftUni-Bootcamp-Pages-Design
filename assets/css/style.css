@@ -353,6 +353,11 @@ select.form-select {
     border-radius: 0;
 }
 
+select.multiple-select {
+    height: 100px !important;
+    padding: 15px;
+}
+
 
 /* Coach Description Modal */
 
