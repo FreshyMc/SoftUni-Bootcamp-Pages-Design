@@ -414,6 +414,66 @@ select.multiple-select {
     background-color: #16D696;
 }
 
+
+/* Green Backdrops */
+
+.pale-green-backdrop-right,
+.green-backdrop-right,
+.pale-green-backdrop-left {
+    position: relative;
+    min-height: 550px;
+    overflow: hidden;
+}
+
+.pale-green-backdrop-right::after {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    content: '';
+    display: block;
+    width: 110%;
+    height: 100%;
+    background-color: #16D696;
+    opacity: 0.1;
+    transform: skewX(-20deg);
+    z-index: -1;
+}
+
+.green-backdrop-right::after {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    content: '';
+    display: block;
+    width: 110%;
+    height: 100%;
+    background-color: #16D696;
+    transform: skewX(-20deg);
+    z-index: -1;
+}
+
+.pale-green-backdrop-left::before {
+    position: absolute;
+    top: 0;
+    left: -25%;
+    content: '';
+    display: block;
+    width: 110%;
+    height: 100%;
+    background-color: #16D696;
+    opacity: 0.1;
+    transform: skewX(20deg);
+    z-index: -1;
+}
+
+.text-highlighted {
+    color: #296CFB;
+}
+
+.required {
+    color: #E84855;
+}
+
 @media screen and (max-width: 1024px) {
     .nav-links li {
         margin-right: 15px !important;
